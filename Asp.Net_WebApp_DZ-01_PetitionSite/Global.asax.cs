@@ -14,7 +14,7 @@ namespace Asp.Net_WebApp_DZ_01_PetitionSite
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new PetitionDbInitializer());
+            //Database.SetInitializer(new PetitionDbInitializer());
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

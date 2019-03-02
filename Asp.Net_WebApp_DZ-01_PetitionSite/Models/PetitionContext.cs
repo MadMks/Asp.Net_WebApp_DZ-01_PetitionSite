@@ -18,6 +18,8 @@ namespace Asp.Net_WebApp_DZ_01_PetitionSite.Models
         {
             // TODO наполнить начальными данными таблицы.
 
+            context.Petitions.Add(new Petition { Title = "name book 1", Description = "desc 1", CountOfVotes = 1 });
+
             base.Seed(context);
         }
     }
