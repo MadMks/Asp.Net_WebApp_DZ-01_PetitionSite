@@ -35,34 +35,34 @@
 
                     <ul class="nav nav-pills">
                         @*<li class="nav-item">
-            <a class="nav-link"
-               href="/petitions">Петиции</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"
-               href="/petitions/add">Добавить петицию</a>
-        </li>*@
+                                <a class="nav-link"
+                                   href="/petitions">Петиции</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="/petitions/add">Добавить петицию</a>
+                            </li>*@
 
                         @*<li class="nav-item">
-                            @Html.ActionLink("Главная", "Index", "Home",
-                                new { area = ""}, new { @class = "nav-link"})
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Петиции", "About", "Home",
-                                new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Добавить петицию", "About", "Home",
-                                new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Архив", "About", "Home",
-                                new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Контакты", "Contact", "Home",
-                                new { area = "" }, new { @class = "nav-link" })
-                        </li>*@
+                                @Html.ActionLink("Главная", "Index", "Home",
+                                    new { area = ""}, new { @class = "nav-link"})
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("Петиции", "About", "Home",
+                                    new { area = "" }, new { @class = "nav-link" })
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("Добавить петицию", "About", "Home",
+                                    new { area = "" }, new { @class = "nav-link" })
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("Архив", "About", "Home",
+                                    new { area = "" }, new { @class = "nav-link" })
+                            </li>
+                            <li class="nav-item">
+                                @Html.ActionLink("Контакты", "Contact", "Home",
+                                    new { area = "" }, new { @class = "nav-link" })
+                            </li>*@
 
                         <li class="nav-item">
                             @Html.MainNavLink("Главная", "Index", "Home")
@@ -86,13 +86,19 @@
         </div>
     </header>
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+
+    <main class="mt-5">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; @DateTime.Now.Year - Петиции</p>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
