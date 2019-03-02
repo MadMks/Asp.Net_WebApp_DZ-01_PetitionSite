@@ -221,6 +221,7 @@
     <Content Include="Views\Petition\All.cshtml" />
     <Content Include="Views\Petition\Show.cshtml" />
     <Content Include="Views\Petition\Active.cshtml" />
+    <Content Include="Views\Petition\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
