@@ -15,8 +15,21 @@ namespace Asp.Net_WebApp_DZ_01_PetitionSite.Controllers
         }
 
         // GET: Petition
+        public ActionResult Active()
+        {
+            return View();
+        }
+
+        // GET: Petition
         public ActionResult All()
         {
+            return View();
+        }
+
+        // GET: Petition
+        public ActionResult Show(int id)
+        {
+            ViewBag.PetitionId = id;
             return View();
         }
     }
