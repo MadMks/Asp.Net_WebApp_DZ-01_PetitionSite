@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Asp.Net_WebApp_DZ_01_PetitionSite.Helpers
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8" />
@@ -34,29 +35,50 @@
 
                     <ul class="nav nav-pills">
                         @*<li class="nav-item">
-                            <a class="nav-link"
-                               href="/petitions">Петиции</a>
+            <a class="nav-link"
+               href="/petitions">Петиции</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"
+               href="/petitions/add">Добавить петицию</a>
+        </li>*@
+
+                        @*<li class="nav-item">
+                            @Html.ActionLink("Главная", "Index", "Home",
+                                new { area = ""}, new { @class = "nav-link"})
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                               href="/petitions/add">Добавить петицию</a>
+                            @Html.ActionLink("Петиции", "About", "Home",
+                                new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Добавить петицию", "About", "Home",
+                                new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Архив", "About", "Home",
+                                new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Контакты", "Contact", "Home",
+                                new { area = "" }, new { @class = "nav-link" })
                         </li>*@
 
                         <li class="nav-item">
-                            @Html.ActionLink("Главная", "Index", "Home",
-                                new { area = ""}, new { @class = "nav-link"})</li>
+                            @Html.MainNavLink("Главная", "Index", "Home")
+                        </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Петиции", "About", "Home",
-                                new { area = "" }, new { @class = "nav-link" })</li>
+                            @Html.MainNavLink("Петиции", "About", "Home")
+                        </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Добавить петицию", "About", "Home",
-                                new { area = "" }, new { @class = "nav-link" })</li>
+                            @Html.MainNavLink("Добавить петицию", "About", "Home")
+                        </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Архив", "About", "Home",
-                                new { area = "" }, new { @class = "nav-link" })</li>
+                            @Html.MainNavLink("Архив", "About", "Home")
+                        </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Контакты", "Contact", "Home",
-                                new { area = "" }, new { @class = "nav-link" })</li>
+                            @Html.MainNavLink("Контакты", "Contact", "Home")
+                        </li>
                     </ul>
 
                 </nav>
